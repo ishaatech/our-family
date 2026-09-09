@@ -1,0 +1,686 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Family ❤️</title>
+
+    <style>
+        /* ---------- BASIC SETTINGS ---------- */
+.thankyou {
+    background-color: #fff0e8;
+}
+
+.letter {
+    max-width: 800px;
+    margin: auto;
+    background: rgb(255, 249, 184);
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(81, 69, 69, 0.1);
+    font-size: 18px;
+}
+
+.letter h3 {
+    color: #833207;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.letter p {
+    margin-bottom: 20px;
+}
+
+.letter strong {
+    color: #b153a1;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        /* ---------- NAVIGATION ---------- */
+
+        nav {
+            background: rgb(138, 0, 0);
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: rgb(254, 191, 226);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul {
+            <li><a href="#thankyou">Thank You</a></li>
+        }
+
+        nav a {
+            color: rgb(170, 163, 234);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #80caea;
+        }
+
+
+        /* ---------- HERO SECTION ---------- */
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background:
+                linear-gradient(rgba(186, 70, 70, 0.45), rgba(128, 44, 44, 0.45)),
+                url("family-main.jpg");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #e88b6d;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #d66f50;
+        }
+
+
+        /* ---------- GENERAL SECTION ---------- */
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            color: #6b3e26;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #620202;
+        }
+
+
+        /* ---------- RASTOGI'S ---------- */
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+
+        /* ---------- MY LIFELINES ---------- */
+
+        .family-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .member {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .member:hover {
+            transform: translateY(-8px);
+        }
+
+        .member img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .member h3 {
+            color: #4ea6d2;
+            margin-bottom: 5px;
+        }
+
+
+        /* ---------- OUR ALBUM < 3 ---------- */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.04);
+        }
+
+
+        /* ---------- MEMORIES ---------- */
+
+        .memory-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .memory {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(255, 190, 190, 0.08);
+        }
+
+        .memory h3 {
+            color: #6b3e26;
+            margin-bottom: 10px;
+        }
+
+
+        /* ---------- FAMILY QUOTE ---------- */
+
+        .quote {
+            background: #6b3e26;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .quote h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .quote p {
+            font-size: 20px;
+        }
+
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            background: #3d2417;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+
+        /* ---------- MOBILE ---------- */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ---------- NAVIGATION ---------- -->
+
+    <nav>
+        <h2>Rastogi's</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#family">Family</a></li>
+            <li><a href="#gallery">Photos</a></li>
+            <li><a href="#memories">Memories</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ---------- HOME ---------- -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>THE HEART OF ME❤️</h1>
+
+            <p>
+                A place where love, laughter and memories
+                are shared and cherished.Because, my family is my everything.
+            </p>
+
+            <a href="#gallery" class="button">
+                View Our Memories
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ---------- ABOUT ---------- -->
+
+    <section>
+
+        <div class="section-title">
+            <h2>About Rastogi's</h2>
+            <p>A little story about the people who mean everything to us.</p>
+        </div>
+
+        <div class="about">
+
+            <p>
+                We are a close-knit family who love spending time together.
+                Our home is filled with laughter, love and warmth.
+                We believe in cherishing every moment and creating memories
+                that will last a lifetime.
+
+            <br>
+
+            <p>
+                I love my family more than anything in this world. They are my support system, my source of happiness, and my greatest blessing. Every day spent with them is a treasure, and I am grateful for the love and care we share.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ---------- FAMILY MEMBERS ---------- -->
+
+    <section id="family">
+
+        <div class="section-title">
+
+            <h2>Meet Our Family</h2>
+
+            <p>
+                The people who make our house a home.
+            </p>
+
+        </div>
+
+
+        <div class="family-container">
+
+
+            <!-- MEMBER 1 -->
+
+            <div class="member">
+
+                <img src="images/dad.jpg" alt="Dad">
+
+                <h3>PAPA</h3>
+
+                <p>
+                    The strength of our family ❤️
+                </p>
+
+            </div>
+
+
+            <!-- MEMBER 2 -->
+
+            <div class="member">
+
+                <img src="images/mom.jpg" alt="Mom">
+
+                <h3>MAA</h3>
+
+                <p>
+                    The heart of our family ❤️
+                </p>
+
+            </div>
+
+
+            <!-- MEMBER 3 -->
+
+            <div class="member">
+
+                <img src="images/cookie.jpg" alt="Doggo">
+
+                <h3>COOKIE</h3>
+
+                <p>
+                   My stress reliever 😊
+                </p>
+
+            </div>
+
+
+            <!-- MEMBER 4 -->
+
+            <div class="member">
+
+                <img src="images/brother.jpg" alt="Brother">
+
+                <h3>BHAII</h3>
+
+                <p>
+                    The entertainer of our family ❤️
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ---------- PHOTO GALLERY ---------- -->
+
+    <section id="gallery">
+
+        <div class="section-title">
+
+            <h2>Our Memories 📸</h2>
+
+            <p>
+                Some moments we will forever cherish.
+            </p>
+
+        </div>
+
+
+        <div class="gallery">
+
+            <img src="images/memory1.jpg" alt="Family Memory 1">
+
+            <img src="images/memory2.jpg" alt="Family Memory 2">
+
+            <img src="images/memory3.jpg" alt="Family Memory 3">
+
+            <img src="images/memory4.jpg" alt="Family Memory 4">
+
+        
+
+        </div>
+
+    </section>
+
+
+    <!-- ---------- MEMORIES ---------- -->
+
+    <section id="memories">
+
+        <div class="section-title">
+
+            <h2>Special Memories ❤️</h2>
+
+            <p>
+                Moments that made us smile.
+            </p>
+
+        </div>
+
+
+        <div class="memory-container">
+
+
+            <div class="memory">
+
+                <h3>🏡 Family Time</h3>
+
+                <p>
+                    Some of our best memories are simply
+                    the moments we spend together at home.
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <h3>✈️ Family Trips</h3>
+
+                <p>
+                    Every journey becomes special when
+                    we travel together.
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <h3>🎂 Celebrations</h3>
+
+                <p>
+                    Birthdays, festivals and celebrations
+                    are always better with family.
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <h3>😂 Funny Moments</h3>
+
+                <p>
+                    The jokes, laughter and random moments
+                    that we will remember forever.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+</style>
+
+</head>
+
+<body>
+
+    <!-- Your navigation -->
+    <!-- Your home section -->
+    <!-- Your family section -->
+    <!-- Your photos -->
+    <!-- Your memories -->
+
+
+    <!-- ---------- THANK YOU LETTER ---------- -->
+
+    <section id="thankyou" class="thankyou">
+
+        <div class="section-title">
+
+            <h2>A Special Thank You ❤️</h2>
+
+            <p>
+                A letter from my heart to my family.
+            </p>
+
+        </div>
+
+
+        <div class="letter">
+
+            <h3>Dear Maa, Papa, Bhai & Cookie ❤️</h3>
+
+            <p>
+                I just want to take a moment to say something
+                that I may not always say out loud —
+                <strong>Thank You.</strong>
+            </p>
+
+            <p>
+                <strong>Maa</strong>, thank you for your endless
+                love, care, patience and for always being there
+                for me. You make everything feel a little better. ❤️
+            </p>
+
+            <p>
+                <strong>Papa</strong>, thank you for everything
+                you do for our family. Thank you for your support,
+                guidance and for always wanting the best for me.
+            </p>
+
+            <p>
+                <strong>Bhai</strong>, thank you for all the fun,
+                fights, jokes and memories. Life would definitely
+                be a lot more boring without you! 😂❤️
+            </p>
+
+            <p>
+                <strong>Cookie</strong>, you may be small little doggo, but you
+                bring so much happiness and love into our family.
+                You are a very special part of our home. 🐾❤️
+            </p>
+
+            <p>
+                Thank you all for being my family, for making me
+                laugh, supporting me through everything and giving
+                me countless memories that I will always treasure.
+            </p>
+
+            <p>
+                No matter where life takes us, I will always carry
+                these memories and this love with me.
+            </p>
+
+            <h3>With all my love ❤️</h3>
+
+            <p>
+                <strong>Thank you for making our house a HOME. 🏡❤️</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ---------- QUOTE ---------- -->
+
+    <section class="quote">
+
+        <h2>"Family is where life begins and love never ends." ❤️</h2>
+
+        <p>
+            Together is our favourite place to be.
+        </p>
+
+    </section>
+</style>
+
+</head>
+
+<body>
+
+    <!-- Your navigation -->
+    <!-- Your home section -->
+    <!-- Your family section -->
+    <!-- Your photos -->
+    <!-- Your memories -->
+
+
+    
+
+    <!-- ---------- FOOTER ---------- -->
+
+    <footer>
+
+        <p>
+            Made with ❤️ for our family
+        </p>
+
+        <p>
+            © 2026 Our Family
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
+```
+
